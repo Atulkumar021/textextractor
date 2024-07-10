@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+* {
+	margin: 0;
+	padding: 0;
+}
+.hero {
+	
+	height: 70vh;
+    width: 100%;
+	background: linear-gradient(45deg, rgba(105, 183, 232, 0.3), rgba(28, 103, 115, 0.3), rgba(71, 44, 121, 0.3), rgba(66, 212, 178, 0.3), rgba(52, 219, 141, 0.3)) 0 0 / 1000% no-repeat, url(../../img/bg-img/bg.jpg) 0 0 / cover no-repeat;
+	-webkit-animation: gradientAnimation 40s ease infinite;
+	animation: gradientAnimation 40s ease infinite;
+}
+@-webkit-keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color:white;
+	font : normal 600 72px/1 'Open Sans', sans-serif;
+	text-align: center;
+	white-space: nowrap;
+}
+h1 span {
+	display: block;
+	margin-top: 1em;
+	font-size: 30px;
+	font-weight: 300;
+}
+@media(max-width: 750px){
+h1  {
+	font-size: 3.2rem;
+}	
+h1 span{
+	font-size: 1.4rem;
+}
+}
